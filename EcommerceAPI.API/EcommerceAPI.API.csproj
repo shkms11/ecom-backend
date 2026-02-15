@@ -10,4 +10,11 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.13" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EcommerceAPI.Core\EcommerceAPI.Core.csproj" />
+    <ProjectReference Include="..\EcommerceAPI.Services\EcommerceAPI.Services.csproj" />
+    <ProjectReference Include="..\EcommerceAPI.Infrastructure\EcommerceAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\EcommerceAPI.Data\EcommerceAPI.Data.csproj" />
+  </ItemGroup>
+
 </Project>
