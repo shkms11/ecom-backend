@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\vimcode\\ecom-backend\\src\\Infrastructure\\EcommerceAPI.Infrastructure\\EcommerceAPI.Infrastructure.csproj",
-      "projectName": "EcommerceAPI.Infrastructure",
-      "projectPath": "F:\\vimcode\\ecom-backend\\src\\Infrastructure\\EcommerceAPI.Infrastructure\\EcommerceAPI.Infrastructure.csproj",
+      "projectUniqueName": "F:\\vimcode\\ecom-backend\\src\\Core\\EcommerceAPI.Domain\\EcommerceAPI.Domain.csproj",
+      "projectName": "EcommerceAPI.Domain",
+      "projectPath": "F:\\vimcode\\ecom-backend\\src\\Core\\EcommerceAPI.Domain\\EcommerceAPI.Domain.csproj",
       "packagesPath": "C:\\Users\\shams\\.nuget\\packages\\",
-      "outputPath": "F:\\vimcode\\ecom-backend\\src\\Infrastructure\\EcommerceAPI.Infrastructure\\obj\\",
+      "outputPath": "F:\\vimcode\\ecom-backend\\src\\Core\\EcommerceAPI.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shams\\AppData\\Roaming\\NuGet\\NuGet.Config"

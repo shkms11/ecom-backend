@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+GpJQ9EVfg4=",
+  "dgSpecHash": "Qa6l61Vgthw=",
   "success": true,
-  "projectFilePath": "F:\\vimcode\\ecom-backend\\EcommerceAPI.Infrastructure\\EcommerceAPI.Infrastructure.csproj",
+  "projectFilePath": "F:\\vimcode\\ecom-backend\\src\\Infrastructure\\EcommerceAPI.Infrastructure\\EcommerceAPI.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

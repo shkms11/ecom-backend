@@ -7,31 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Asp.Versioning.Mvc" Version="8.0.0" />
-    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.0.0" />
-    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.0" />
-    <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.13" />
-    <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.2.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
-    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
-    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\EcommerceAPI.Core\EcommerceAPI.Core.csproj" />
-    <ProjectReference Include="..\EcommerceAPI.Services\EcommerceAPI.Services.csproj" />
-    <ProjectReference Include="..\EcommerceAPI.Infrastructure\EcommerceAPI.Infrastructure.csproj" />
-    <ProjectReference Include="..\EcommerceAPI.Data\EcommerceAPI.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\vimcode\\ecom-backend\\src\\Infrastructure\\EcommerceAPI.Infrastructure\\EcommerceAPI.Infrastructure.csproj": {}
+    "F:\\vimcode\\ecom-backend\\tests\\EcommerceAPI.API.Tests\\EcommerceAPI.API.Tests.csproj": {}
   },
   "projects": {
-    "F:\\vimcode\\ecom-backend\\src\\Infrastructure\\EcommerceAPI.Infrastructure\\EcommerceAPI.Infrastructure.csproj": {
+    "F:\\vimcode\\ecom-backend\\tests\\EcommerceAPI.API.Tests\\EcommerceAPI.API.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\vimcode\\ecom-backend\\src\\Infrastructure\\EcommerceAPI.Infrastructure\\EcommerceAPI.Infrastructure.csproj",
-        "projectName": "EcommerceAPI.Infrastructure",
-        "projectPath": "F:\\vimcode\\ecom-backend\\src\\Infrastructure\\EcommerceAPI.Infrastructure\\EcommerceAPI.Infrastructure.csproj",
+        "projectUniqueName": "F:\\vimcode\\ecom-backend\\tests\\EcommerceAPI.API.Tests\\EcommerceAPI.API.Tests.csproj",
+        "projectName": "EcommerceAPI.API.Tests",
+        "projectPath": "F:\\vimcode\\ecom-backend\\tests\\EcommerceAPI.API.Tests\\EcommerceAPI.API.Tests.csproj",
         "packagesPath": "C:\\Users\\shams\\.nuget\\packages\\",
-        "outputPath": "F:\\vimcode\\ecom-backend\\src\\Infrastructure\\EcommerceAPI.Infrastructure\\obj\\",
+        "outputPath": "F:\\vimcode\\ecom-backend\\tests\\EcommerceAPI.API.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shams\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,24 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.12.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
