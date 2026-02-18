@@ -482,3 +482,35 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+
+# .NET Core / SDK style extras
+
+# dotnet watch
+.dotnet/
+
+# Rider cache
+.idea/
+
+# JetBrains Rider
+*.sln.DotSettings
+
+# OS generated
+*.DS_Store
+
+# Environment-specific configs
+appsettings.Development.json
+appsettings.Local.json
+
+# Secrets
+secrets.json
+
+# Docker
+docker-compose.override.yml
+
+# Coverage reports
+coverage/
+TestResults/
+
+# EF Core migrations snapshot backups (optional safety)
+*.Designer.cs
