@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\EcommerceAPI.Application\EcommerceAPI.Application.csproj" />
+    <ProjectReference Include="..\Core\EcommerceAPI.Core\EcommerceAPI.Core.csproj" />
+    <ProjectReference Include="..\Core\EcommerceAPI.Domain\EcommerceAPI.Domain.csproj" />
+    <ProjectReference Include="..\Core\EcommerceAPI.Services\EcommerceAPI.Services.csproj" />
+    <ProjectReference Include="..\Infrastructure\EcommerceAPI.Data\EcommerceAPI.Data.csproj" />
+    <ProjectReference Include="..\Infrastructure\EcommerceAPI.Infrastructure\EcommerceAPI.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
