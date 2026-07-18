@@ -3,12 +3,12 @@ using EcommerceAPI.Domain.Entities;
 
 namespace EcommerceAPI.Domain.Events
 {
-    public class OrderPlacedEvent : IDomainEvent
+    public class OrderCancelledEvent : IDomainEvent
     {
         public Order Order { get; }
         public DateTime OccurredOn { get; }
 
-        public OrderPlacedEvent(Order order)
+        public OrderCancelledEvent(Order order)
         {
             Order = order;
             OccurredOn = DateTime.UtcNow;

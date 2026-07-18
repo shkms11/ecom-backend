@@ -1,14 +1,43 @@
+using EcommerceAPI.Application; // <-- add this
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+var allowedOrigins = new[]
+{
+    "http://localhost:5173", // Vite
+    "http://localhost:3000", // CRA
+};
 
+// CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(
+        "ReactCors",
+        policy =>
+        {
+            policy.WithOrigins(allowedOrigins).AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+        }
+    );
+});
+
+// Application layer (MediatR, FluentValidation, pipeline behaviors)
+builder.Services.AddApplication();
+
+// Controllers
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
+// OpenAPI / Swagger
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// CORS
+app.UseCors("ReactCors");
+
+// Dev-only OpenAPI
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
@@ -16,6 +45,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Later you will add app.UseAuthentication() here once JWT is wired
 app.UseAuthorization();
 
 app.MapControllers();
