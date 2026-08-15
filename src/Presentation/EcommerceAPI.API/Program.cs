@@ -1,4 +1,5 @@
-using EcommerceAPI.Application; // <-- add this
+using EcommerceAPI.Application;
+using EcommerceAPI.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,8 +24,13 @@ builder.Services.AddCors(options =>
     );
 });
 
-// Application layer (MediatR, FluentValidation, pipeline behaviors)
+// Application layer
+// MediatR, FluentValidation, pipeline behaviors
 builder.Services.AddApplication();
+
+// Infrastructure layer
+// EF Core, repositories, database
+builder.Services.AddInfrastructure(builder.Configuration);
 
 // Controllers
 builder.Services.AddControllers();
@@ -45,7 +51,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Later you will add app.UseAuthentication() here once JWT is wired
+// Later you will add:
+// app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllers();
