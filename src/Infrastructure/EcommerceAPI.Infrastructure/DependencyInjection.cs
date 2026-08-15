@@ -1,6 +1,8 @@
+using EcommerceAPI.Application.Common.Interfaces;
 using EcommerceAPI.Domain.Interfaces;
 using EcommerceAPI.Infrastructure.Persistence;
 using EcommerceAPI.Infrastructure.Persistence.Repositories;
+using EcommerceAPI.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +23,10 @@ public static class DependencyInjection
 
         // Repositories
         services.AddScoped<ICartRepository, CartRepository>();
+        services.AddScoped<IUserRepository, UserRepository>();
+
+        // Services
+        services.AddScoped<ITokenService, TokenService>();
 
         return services;
     }
